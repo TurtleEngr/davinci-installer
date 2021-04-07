@@ -1,0 +1,7 @@
+dist
+pkg
+tmp
+epm.list
+ver.env
+ver.epm
+ver.mak

@@ -1,0 +1,22 @@
+# Mainly remove directories that this package is not responsible for.
+
+#$pDel{'/opt/resolve/LUT/HDR\ Hybrid\ Log-Gamma/Gamma\ 2.4\ to\ HLG.cube'} = 1;
+$pDel{"/etc"} = 1;
+$pDel{"/etc/xdg"} = 1;
+$pDel{"/etc/xdg/menus"} = 1;
+$pDel{"/etc/xdg/menus/applications-merged"} = 1;
+$pDel{"/lib"} = 1;
+$pDel{"/lib/udev"} = 1;
+$pDel{"/lib/udev/rules.d"} = 1;
+$pDel{"/opt"} = 1;
+$pDel{"/usr"} = 1;
+$pDel{"/usr/bin"} = 1;
+$pDel{"/usr/lib"} = 1;
+$pDel{"/usr/share"} = 1;
+$pDel{"/usr/share/applications"} = 1;
+$pDel{"/usr/share/desktop-directories"} = 1;
+$pDel{"/var"} = 1;
+
+$pConf{"/opt/resolve/share/default-config.dat"} = 1;
+$pConf{"/opt/resolve/share/default_cm_config.bin"} = 1;
+$pConf{"/opt/resolve/share/log-conf.xml"} = 1;
