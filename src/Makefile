@@ -1,14 +1,4 @@
-# $Header: /repo/public.cvs/app/davinci-installer/github/src/Makefile,v 1.6 2020/12/03 09:51:35 bruce Exp $
-
-# --------------------
-# Mount drive with /rel/archive/software/ThirdParty/davinci
-
-# make prepare		# Check for dependencies
-# make build		# Place all the files to be packaged, in dist/
-# 	make clean 	# if build or package fails
-# make package		# Build the package
-# make release		# Push the package to distribution server
-# make dist-clean	# Clean up all build files
+# $Header: /repo/public.cvs/app/davinci-installer/github/src/Makefile,v 1.7 2021/04/08 06:32:21 bruce Exp $
 
 # ----------------------------------------
 # Macros
@@ -20,10 +10,12 @@ include ver.mak
 mArchive = /rel/archive/software/ThirdParty/davinci
 #mArchive = $(HOME)/Downloads
 mVer = $(ProdVer)
-mDVPkg = DaVinci_Resolve_$(mVer)_Linux
 
-#DaVinci_Resolve_17.0b3_Linux.zip
-#DaVinci_Resolve_Studio_16.2.7_Linux.zip
+mDVPkg = DaVinci_Resolve_$(mVer)_Linux
+# example: DaVinci_Resolve_17.0b3_Linux.zip
+
+#mDVPkg = DaVinci_Resolve_Studio_$(mVer)_Linux
+# example: DaVinci_Resolve_Studio_16.2.7_Linux.zip
 
 mTop = dist/opt/resolve
 

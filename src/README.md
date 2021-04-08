@@ -92,11 +92,12 @@ Put the zip file in the mArchive location.
 
 ### make prepare
 
-Make and check for dependencies
+Make and check for dependencies. Install any missing dependencies.
 
 ### make build
 
-Place all the files to be packaged, in dist/
+Place all the files to be packaged in dist/ dir. Verify the files look
+OK.
 
 #### make clean
 
@@ -104,12 +105,14 @@ If build or package fails, you can cleanup dist and other tmp areas.
 
 ### make package
 
-Build the package.
+Build the package. The package will be put in the pkg/ dir.  If you
+rebuild the package, increment the ProdBuild number.
 
 ### make release
 
-Push the package to your distribution server.  This is your personal
-installer. This should not be made "public".
+This pushes the package to your distribution server (with rsync via
+ssh).  This is your personal installer. This should not be made
+"public".
 
 ### make dist-clean
 
@@ -118,4 +121,4 @@ DO NOT commit "built" files.
 
 ---
 
-$Header: /repo/public.cvs/app/davinci-installer/github/src/README.md,v 1.2 2021/04/08 07:00:32 bruce Exp $
+$Header: /repo/public.cvs/app/davinci-installer/github/src/README.md,v 1.3 2021/04/08 07:09:17 bruce Exp $

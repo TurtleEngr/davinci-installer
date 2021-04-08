@@ -106,9 +106,7 @@ distributions and versions. **So a more general solution is needed.**
 This packaging tool will create: rpm and deb package for the most
 common Linux distributions. It will also create dgm MacOS
 packages. Often the most of the package configuration can be the same
-for the different OS distributions. See:
-[ESP Package Manager (EPM) -new home of 2020-11-18](https://jimjag.github.io/epm/)
-[ESP Package Manager (EPM) - old home](https://www.msweet.org/epm/epm.html)
+for the different OS distributions.
 
 This project leverages from the things MakeResolveDeb implements. But
 it makes a more general installer that can be made for more Linux
@@ -118,6 +116,8 @@ definition files and in configuration files. **The EPM approach is a
 do it.**</p>
 
 Step 1: build or download the latest EPM packager.
+[ESP Package Manager (EPM) -new home of 2020-11-18](https://jimjag.github.io/epm/)
+[ESP Package Manager (EPM) - old home](https://www.msweet.org/epm/epm.html)
 
 Step 2: Install the EPM helper scripts. These scripts will help
 determine the OS you are on, and the generated env. var. that can be
@@ -129,5 +129,5 @@ building. For Ubuntu, see
 
 ---
 
-    $Source: /repo/local.cvs/per/bruce/public_html/template/template.html,v $
-    $Revision: 1.6 $ $Date: 2015/07/19 03:30:12 $ GMT
+    $Source: /repo/public.cvs/app/davinci-installer/github/README.md,v $
+    $Revision: 1.2 $ $Date: 2021/04/08 06:32:20 $ GMT
