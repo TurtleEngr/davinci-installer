@@ -1,0 +1,277 @@
+doc/davinci-rm-mess.txt - find ALL native installed DaVinci_Resolve files
+
+sudo -s
+updatedb
+locate DaVinci
+
+$HOME/.local/share/DaVinciResolve
+$HOME/.local/share/DaVinciResolve/.LUT
+$HOME/.local/share/DaVinciResolve/DolbyVision
+$HOME/.local/share/DaVinciResolve/Fairlight
+$HOME/.local/share/DaVinciResolve/Fusion
+$HOME/.local/share/DaVinciResolve/Resolve Disk Database
+$HOME/.local/share/DaVinciResolve/configs
+$HOME/.local/share/DaVinciResolve/easyDCP
+$HOME/.local/share/DaVinciResolve/logs
+$HOME/.local/share/DaVinciResolve/.LUT/.ThumbnailVer
+$HOME/.local/share/DaVinciResolve/.LUT/ACES
+$HOME/.local/share/DaVinciResolve/.LUT/Arri
+$HOME/.local/share/DaVinciResolve/.LUT/Astrodesign
+$HOME/.local/share/DaVinciResolve/.LUT/Blackmagic Design
+$HOME/.local/share/DaVinciResolve/.LUT/Canon Log to Cineon_ilut
+$HOME/.local/share/DaVinciResolve/.LUT/Canon Log to Rec709_ilut
+$HOME/.local/share/DaVinciResolve/.LUT/Canon Log to Video_ilut
+$HOME/.local/share/DaVinciResolve/.LUT/Cintel Negative to Linear_ilut
+$HOME/.local/share/DaVinciResolve/.LUT/Cintel Print to Linear_ilut
+$HOME/.local/share/DaVinciResolve/.LUT/DCI
+$HOME/.local/share/DaVinciResolve/.LUT/DJI
+$HOME/.local/share/DaVinciResolve/.LUT/Data to Video with Clip_olut
+$HOME/.local/share/DaVinciResolve/.LUT/Film Looks
+$HOME/.local/share/DaVinciResolve/.LUT/HDR Hybrid Log-Gamma
+$HOME/.local/share/DaVinciResolve/.LUT/HDR ST 2084
+$HOME/.local/share/DaVinciResolve/.LUT/Invert Color_ilut
+$HOME/.local/share/DaVinciResolve/.LUT/Invert Color_olut
+$HOME/.local/share/DaVinciResolve/.LUT/Olympus
+$HOME/.local/share/DaVinciResolve/.LUT/Panasonic
+$HOME/.local/share/DaVinciResolve/.LUT/RED
+$HOME/.local/share/DaVinciResolve/.LUT/Sony
+$HOME/.local/share/DaVinciResolve/.LUT/Sony SLog2 to Rec709_ilut
+$HOME/.local/share/DaVinciResolve/.LUT/Sony SLog3 to Rec709_ilut
+$HOME/.local/share/DaVinciResolve/.LUT/VFX IO
+$HOME/.local/share/DaVinciResolve/.LUT/ACES/LMT ACES v0.1.1.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Arri/Arri Alexa LogC to Rec709.dat_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Astrodesign/ALog to ARRI Log C.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Blackmagic Design/Blackmagic 4.6K Film to Extended Video v4.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Blackmagic Design/Blackmagic 4.6K Film to Rec709 v3.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Blackmagic Design/Blackmagic 4.6K Film to Rec709.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Blackmagic Design/Blackmagic 4.6K Film to Video v3.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Blackmagic Design/Blackmagic 4.6K Film to Video v4.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Blackmagic Design/Blackmagic 4.6K Film to Video.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Blackmagic Design/Blackmagic 4K Film to Extended Video v4.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Blackmagic Design/Blackmagic 4K Film to Rec709 v2.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Blackmagic Design/Blackmagic 4K Film to Rec709 v3.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Blackmagic Design/Blackmagic 4K Film to Rec709.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Blackmagic Design/Blackmagic 4K Film to Video v3.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Blackmagic Design/Blackmagic Broadcast Film to Extended Video v4.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Blackmagic Design/Blackmagic Broadcast Film to Rec2020 HLG v4.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Blackmagic Design/Blackmagic Broadcast Film to Rec2020 PQ v4.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Blackmagic Design/Blackmagic Cinema Camera Film to Rec709 v2.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Blackmagic Design/Blackmagic Cinema Camera Film to Rec709.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Blackmagic Design/Blackmagic Film to Extended Video v4.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Blackmagic Design/Blackmagic Pocket 4K Film to Extended Video v4.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Blackmagic Design/Blackmagic Pocket 4K Film to Video v4.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Blackmagic Design/Blackmagic Pocket 6K Film to Extended Video v4.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Blackmagic Design/Blackmagic Pocket 6K Film to Video v4.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/DCI/P3 to DCI-XYZ.dat_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/DCI/Rec709 to DCI-XYZ.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/DCI/sRGB to DCI-XYZ.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/DJI/DJI_Phantom3_DLOG2sRGB_Improv.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/DJI/DJI_Phantom4_DLOG2Rec709.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/DJI/DJI_Phantom4_DLOG2sRGB_Improv.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/DJI/DJI_X5_DLOG2sRGB_Improv.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/DJI/DJI_X7_DLOG2Rec709.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/DJI/DJI_X7_Linear2DLOG.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Film Looks/DCI-P3 Fujifilm 3513DI D55.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Film Looks/DCI-P3 Fujifilm 3513DI D60.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Film Looks/DCI-P3 Fujifilm 3513DI D65.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Film Looks/DCI-P3 Kodak 2383 D55.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Film Looks/DCI-P3 Kodak 2383 D60.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Film Looks/DCI-P3 Kodak 2383 D65.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Film Looks/Rec709 Fujifilm 3513DI D55.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Film Looks/Rec709 Fujifilm 3513DI D60.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Film Looks/Rec709 Fujifilm 3513DI D65.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Film Looks/Rec709 Kodak 2383 D55.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Film Looks/Rec709 Kodak 2383 D60.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Film Looks/Rec709 Kodak 2383 D65.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/HDR Hybrid Log-Gamma/Gamma 1.0 to HLG.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/HDR Hybrid Log-Gamma/Gamma 2.2 to HLG.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/HDR Hybrid Log-Gamma/Gamma 2.4 to HLG.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/HDR Hybrid Log-Gamma/Gamma 2.6 to HLG.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/HDR Hybrid Log-Gamma/HLG to Gamma 1.0.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/HDR Hybrid Log-Gamma/HLG to Gamma 2.2.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/HDR Hybrid Log-Gamma/HLG to Gamma 2.4.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/HDR Hybrid Log-Gamma/HLG to Gamma 2.6.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/HDR ST 2084/Gamma 2.4 to HDR 1000 nits.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/HDR ST 2084/Gamma 2.4 to HDR 2000 nits.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/HDR ST 2084/Gamma 2.4 to HDR 300 nits.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/HDR ST 2084/Gamma 2.4 to HDR 4000 nits.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/HDR ST 2084/Gamma 2.4 to HDR 500 nits.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/HDR ST 2084/Gamma 2.4 to HDR 800 nits.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/HDR ST 2084/Gamma 2.6 to HDR 1000 nits.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/HDR ST 2084/Gamma 2.6 to HDR 2000 nits.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/HDR ST 2084/Gamma 2.6 to HDR 300 nits.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/HDR ST 2084/Gamma 2.6 to HDR 4000 nits.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/HDR ST 2084/Gamma 2.6 to HDR 500 nits.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/HDR ST 2084/Gamma 2.6 to HDR 800 nits.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/HDR ST 2084/HDR 1000 nits to Gamma 2.4.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/HDR ST 2084/HDR 1000 nits to Gamma 2.6.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/HDR ST 2084/HDR 2000 nits to Gamma 2.4.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/HDR ST 2084/HDR 2000 nits to Gamma 2.6.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/HDR ST 2084/HDR 300 nits to Gamma 2.4.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/HDR ST 2084/HDR 300 nits to Gamma 2.6.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/HDR ST 2084/HDR 4000 nits to Gamma 2.4.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/HDR ST 2084/HDR 4000 nits to Gamma 2.6.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/HDR ST 2084/HDR 500 nits to Gamma 2.4.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/HDR ST 2084/HDR 500 nits to Gamma 2.6.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/HDR ST 2084/HDR 800 nits to Gamma 2.4.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/HDR ST 2084/HDR 800 nits to Gamma 2.6.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Olympus/Olympus OM-Log400_to_BT.709_v1.0.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Panasonic/V-Log to V-709.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/RED/RWG_Log3G10_to_REC709_BT1886_with_LOW_CONTRAST_and_R_3_Soft_size_33.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Sony/SLog3SGamut3.CineToCine+709.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Sony/SLog3SGamut3.CineToLC-709.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Sony/SLog3SGamut3.CineToLC-709TypeA.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/Sony/SLog3SGamut3.CineToSLog2-709.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/VFX IO/ARRI LogC to Linear.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/VFX IO/BMDFilm 4.6K to Linear.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/VFX IO/BMDFilm 4K to Linear.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/VFX IO/BMDFilm to Linear.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/VFX IO/Cineon Log to Linear.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/VFX IO/DCI to Linear.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/VFX IO/Gamma 2.2 to Linear.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/VFX IO/Gamma 2.4 to Linear.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/VFX IO/Linear to ARRI LogC.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/VFX IO/Linear to BMDFilm 4.6K.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/VFX IO/Linear to BMDFilm 4K.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/VFX IO/Linear to BMDFilm.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/VFX IO/Linear to Cineon Log.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/VFX IO/Linear to DCI.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/VFX IO/Linear to Gamma 2.2.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/VFX IO/Linear to Gamma 2.4.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/VFX IO/Linear to Rec.709.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/VFX IO/Linear to sLog2.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/VFX IO/Linear to sRGB.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/VFX IO/Rec.709 to Linear.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/VFX IO/sLog2 to Linear.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/.LUT/VFX IO/sRGB to Linear.cube_shaperlut
+$HOME/.local/share/DaVinciResolve/DolbyVision/config.bin
+$HOME/.local/share/DaVinciResolve/Fairlight/Mixes
+$HOME/.local/share/DaVinciResolve/Fairlight/Mixes/Undo
+$HOME/.local/share/DaVinciResolve/Fusion/Bins
+$HOME/.local/share/DaVinciResolve/Fusion/Brushes
+$HOME/.local/share/DaVinciResolve/Fusion/Config
+$HOME/.local/share/DaVinciResolve/Fusion/Defaults
+$HOME/.local/share/DaVinciResolve/Fusion/Filters
+$HOME/.local/share/DaVinciResolve/Fusion/Fuses
+$HOME/.local/share/DaVinciResolve/Fusion/Guides
+$HOME/.local/share/DaVinciResolve/Fusion/LUTs
+$HOME/.local/share/DaVinciResolve/Fusion/Layouts
+$HOME/.local/share/DaVinciResolve/Fusion/Library
+$HOME/.local/share/DaVinciResolve/Fusion/Macros
+$HOME/.local/share/DaVinciResolve/Fusion/Modules
+$HOME/.local/share/DaVinciResolve/Fusion/Plugins
+$HOME/.local/share/DaVinciResolve/Fusion/Profiles
+$HOME/.local/share/DaVinciResolve/Fusion/Scripts
+$HOME/.local/share/DaVinciResolve/Fusion/Settings
+$HOME/.local/share/DaVinciResolve/Fusion/Stamps
+$HOME/.local/share/DaVinciResolve/Fusion/Templates
+$HOME/.local/share/DaVinciResolve/Fusion/Modules/Lua
+$HOME/.local/share/DaVinciResolve/Fusion/Profiles/Default
+$HOME/.local/share/DaVinciResolve/Fusion/Profiles/Default/Fusion.prefs
+$HOME/.local/share/DaVinciResolve/Fusion/Scripts/Color
+$HOME/.local/share/DaVinciResolve/Fusion/Scripts/Comp
+$HOME/.local/share/DaVinciResolve/Fusion/Scripts/Deliver
+$HOME/.local/share/DaVinciResolve/Fusion/Scripts/Edit
+$HOME/.local/share/DaVinciResolve/Fusion/Scripts/Tool
+$HOME/.local/share/DaVinciResolve/Fusion/Scripts/Utility
+$HOME/.local/share/DaVinciResolve/Fusion/Scripts/Views
+$HOME/.local/share/DaVinciResolve/Fusion/Templates/Edit
+$HOME/.local/share/DaVinciResolve/Fusion/Templates/Fusion
+$HOME/.local/share/DaVinciResolve/Fusion/Templates/Edit/Effects
+$HOME/.local/share/DaVinciResolve/Fusion/Templates/Edit/Generators
+$HOME/.local/share/DaVinciResolve/Fusion/Templates/Edit/Titles
+$HOME/.local/share/DaVinciResolve/Fusion/Templates/Edit/Transitions
+$HOME/.local/share/DaVinciResolve/Resolve Disk Database/Resolve Projects
+$HOME/.local/share/DaVinciResolve/Resolve Disk Database/Resolve Projects/Settings
+$HOME/.local/share/DaVinciResolve/Resolve Disk Database/Resolve Projects/Users
+$HOME/.local/share/DaVinciResolve/Resolve Disk Database/Resolve Projects/Settings/DeliverPresetList.xml
+$HOME/.local/share/DaVinciResolve/Resolve Disk Database/Resolve Projects/Settings/PTZRInputPresetList.xml
+$HOME/.local/share/DaVinciResolve/Resolve Disk Database/Resolve Projects/Settings/PTZROutputPresetList.xml
+$HOME/.local/share/DaVinciResolve/Resolve Disk Database/Resolve Projects/Settings/SYSTEM CONFIG.xml
+$HOME/.local/share/DaVinciResolve/Resolve Disk Database/Resolve Projects/Settings/SlatePresetList.xml
+$HOME/.local/share/DaVinciResolve/Resolve Disk Database/Resolve Projects/Settings/WindowsPresetList.xml
+$HOME/.local/share/DaVinciResolve/Resolve Disk Database/Resolve Projects/Users/admin
+$HOME/.local/share/DaVinciResolve/Resolve Disk Database/Resolve Projects/Users/guest
+$HOME/.local/share/DaVinciResolve/Resolve Disk Database/Resolve Projects/Users/admin/Configs
+$HOME/.local/share/DaVinciResolve/Resolve Disk Database/Resolve Projects/Users/admin/User.db
+$HOME/.local/share/DaVinciResolve/Resolve Disk Database/Resolve Projects/Users/admin/Configs/User Default Config.xml
+$HOME/.local/share/DaVinciResolve/Resolve Disk Database/Resolve Projects/Users/guest/Configs
+$HOME/.local/share/DaVinciResolve/Resolve Disk Database/Resolve Projects/Users/guest/Projects
+$HOME/.local/share/DaVinciResolve/Resolve Disk Database/Resolve Projects/Users/guest/User.db
+$HOME/.local/share/DaVinciResolve/Resolve Disk Database/Resolve Projects/Users/guest/Configs/User Default Config.xml
+$HOME/.local/share/DaVinciResolve/Resolve Disk Database/Resolve Projects/Users/guest/Projects/Untitled Project test
+$HOME/.local/share/DaVinciResolve/Resolve Disk Database/Resolve Projects/Users/guest/Projects/Untitled Project test/Project.db
+$HOME/.local/share/DaVinciResolve/configs/.config.data
+$HOME/.local/share/DaVinciResolve/configs/.dblist
+$HOME/.local/share/DaVinciResolve/configs/.fsbookmarklist
+$HOME/.local/share/DaVinciResolve/configs/.version
+$HOME/.local/share/DaVinciResolve/configs/Fairlight
+$HOME/.local/share/DaVinciResolve/configs/OFXPluginCache.xml
+$HOME/.local/share/DaVinciResolve/configs/ProjectServer
+$HOME/.local/share/DaVinciResolve/configs/UI.preset
+$HOME/.local/share/DaVinciResolve/configs/config-fairlight.dat
+$HOME/.local/share/DaVinciResolve/configs/config.dat
+$HOME/.local/share/DaVinciResolve/configs/config.dat.bak
+$HOME/.local/share/DaVinciResolve/configs/config.user.presets.xml
+$HOME/.local/share/DaVinciResolve/configs/config.user.xml
+$HOME/.local/share/DaVinciResolve/configs/keyboard.preset.xml
+$HOME/.local/share/DaVinciResolve/configs/log-conf.xml
+$HOME/.local/share/DaVinciResolve/configs/mediametadata.preset.xml
+$HOME/.local/share/DaVinciResolve/configs/Fairlight/Effects
+$HOME/.local/share/DaVinciResolve/configs/Fairlight/FLDebugSettings.csv
+$HOME/.local/share/DaVinciResolve/configs/Fairlight/Monitoring
+$HOME/.local/share/DaVinciResolve/configs/Fairlight/System Parameters.xml
+$HOME/.local/share/DaVinciResolve/configs/Fairlight/Effects/ExternalFXConfiguration.xml
+$HOME/.local/share/DaVinciResolve/configs/Fairlight/Effects/FXConfiguration.xml
+$HOME/.local/share/DaVinciResolve/configs/Fairlight/Effects/FXScan.xml
+$HOME/.local/share/DaVinciResolve/configs/Fairlight/Monitoring/Talkback.xml
+$HOME/.local/share/DaVinciResolve/logs/DPDecoder.56790.log
+$HOME/.local/share/DaVinciResolve/logs/DPDecoder.56791.log
+$HOME/.local/share/DaVinciResolve/logs/DPDecoder.56792.log
+$HOME/.local/share/DaVinciResolve/logs/DPDecoder.56793.log
+$HOME/.local/share/DaVinciResolve/logs/DPDecoder.56794.log
+$HOME/.local/share/DaVinciResolve/logs/DPDecoder.56795.log
+$HOME/.local/share/DaVinciResolve/logs/DPDecoder.56796.log
+$HOME/.local/share/DaVinciResolve/logs/DPDecoder.56797.log
+$HOME/.local/share/DaVinciResolve/logs/LogArchive
+$HOME/.local/share/DaVinciResolve/logs/LogArchive/ResolveDebug_1.txt
+$HOME/.local/share/DaVinciResolve/logs/LogArchive/ResolveDebug_2.txt
+$HOME/.local/share/DaVinciResolve/logs/LogArchive/ResolveDebug_3.txt
+$HOME/.local/share/DaVinciResolve/logs/LogArchive/ResolveDebug_4.txt
+$HOME/.local/share/DaVinciResolve/logs/LogArchive/ResolveDebug_5.txt
+$HOME/BlackmagicDesign/DaVinci Resolve
+$HOME/BlackmagicDesign/DaVinci Resolve/Fusion
+$HOME/BlackmagicDesign/DaVinci Resolve/Fusion/Default AutoSaves
+$HOME/BlackmagicDesign/DaVinci Resolve/Fusion/Queue
+$HOME/Downloads/DaVinci
+$HOME/Downloads/DaVinci_Resolve_16.2.4_Linux.zip
+$HOME/Downloads/DaVinci_Resolve_16.2.7_Linux.run
+$HOME/Downloads/DaVinci_Resolve_16.2.7_Linux.zip
+$HOME/Downloads/DaVinci/DaVinci_Resolve_16.2.4_Linux.run
+$HOME/Downloads/DaVinci/GPUCache
+$HOME/Downloads/DaVinci/Linux_Installation_Instructions.pdf
+$HOME/Downloads/DaVinci/GPUCache/data_0
+$HOME/Downloads/DaVinci/GPUCache/data_1
+$HOME/Downloads/DaVinci/GPUCache/data_2
+$HOME/Downloads/DaVinci/GPUCache/data_3
+$HOME/Downloads/DaVinci/GPUCache/index
+$HOME/per/config/Blackmagic Design/DaVinci Resolve Panels Setup.conf
+/usr/lib/libDaVinciPanelAPI.so
+/usr/share/icons/hicolor/64x64/apps/DaVinci-Resolve.png
+/usr/share/icons/hicolor/64x64/apps/DaVinci-ResolveDbKey.png
+/usr/share/icons/hicolor/64x64/apps/DaVinci-ResolveProj.png
+/var/BlackmagicDesign/DaVinci Resolve
+
+------------------
+locate davinci | egrep -v '/mnt/plasma.data3|ver/public|/usr/src/linux-header'
+
+/lib/udev/rules.d/75-davincipanel.rules
+
+------------------
+grep -rli davinc /usr/share/applications/*
+
+/usr/share/applications/bamf-2.index
+/usr/share/applications/com.blackmagicdesign.resolve-CaptureLogs.desktop
+/usr/share/applications/com.blackmagicdesign.resolve.desktop
+/usr/share/applications/com.blackmagicdesign.resolve-Installer.desktop
+/usr/share/applications/com.blackmagicdesign.resolve-Panels.desktop
