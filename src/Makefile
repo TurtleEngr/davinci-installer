@@ -1,4 +1,4 @@
-# $Header: /repo/public.cvs/app/davinci-installer/github/src/Makefile,v 1.7 2021/04/08 06:32:21 bruce Exp $
+# $Header: /repo/public.cvs/app/davinci-installer/github/src/Makefile,v 1.8 2021/04/08 20:18:10 bruce Exp $
 
 # ----------------------------------------
 # Macros
@@ -9,7 +9,7 @@ include ver.mak
 
 mArchive = /rel/archive/software/ThirdParty/davinci
 #mArchive = $(HOME)/Downloads
-mVer = $(ProdVer)
+mVer = $(ProdTPVer)
 
 mDVPkg = DaVinci_Resolve_$(mVer)_Linux
 # example: DaVinci_Resolve_17.0b3_Linux.zip
@@ -90,9 +90,12 @@ mRemove = \
 
 # ----------------------------------------
 # Main targets
-.PHONY : build package release tag prepare help clean dist-clean
+.PHONY : prepare build package release tag help clean dist-clean
 
-build : ver.mak ver.env $(mTop)/bin/resolve $(mBuildList)
+prepare : ver.mak dep
+
+build : ver.mak ver.env $(mTop)/bin/resolve $(mBuildList) \
+    tmp/post-install.sh tmp/post-rm.sh
 	@echo "Remove unused files"
 	-mv -f $(mRemove) tmp/trash
 	@echo "Building dist/ for $(ProdName)"
@@ -106,7 +109,7 @@ build : ver.mak ver.env $(mTop)/bin/resolve $(mBuildList)
 	mkepmlist -u root -g root --prefix / dist | patch-epm-list -f ./patch.dat >epm.list
 
 package : pkg ver.epm $(mTop)/bin/resolve epm.list epm.inc \
-    ver-$(ProdOS).require tmp/post-install.sh tmp/post-rm.sh
+    ver-$(ProdOS).require
 	-rm -f pkg/* &>/dev/null
 	if [ "$$(whoami)" != "root" ]; then exit 1; fi
 	epm -v -f native  -a $(ProdArch) --output-dir pkg $(ProdName) ver.epm
@@ -121,8 +124,6 @@ tag :
 	cvs tag -cRF $(ProdTag)
 	date >>VERSION
 	echo $(ProdTag) >>VERSION
-
-prepare : ver.mak dep
 
 help : tmp/$(mDVPkg).run
 	@echo "List $(mDVPkg).run arguments (but these are not used)"

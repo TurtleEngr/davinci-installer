@@ -47,9 +47,13 @@ Define these vars:
 
 * **ProdName** - Change if desired.
 
-* **ProdVer** - This must match the version number of the zip file, so
-that it matches this pattern for the package:
-"DaVinci_Resolve_$(mVer)_Linux"
+* **ProdVer** - this to the version number that will be used for your
+installer. It should be the same as the zip file version, but it could
+be different.
+
+* **ProdTPVer** - Set this to the version number of the zip file, so
+that it matches this kind of pattern:
+"DaVinci_Resolve_$(mVer)_Linux". mVer will be set to this variable.
 
 * **ProdRelServer** - server domain name
 
@@ -76,15 +80,34 @@ update patch.dat
 
 * Change **mDesktopDir** - if the path is not correct.
 
-* Uncoment the **mDVPkg** installer you will be building. The free version
-or the studio version.
-
 ### Download the latest DaVinci_Resolve zip
 
 From:
 [https://www.blackmagicdesign.com/products/davinciresolve/](https://www.blackmagicdesign.com/products/davinciresolve/)
+- Select Linux.  (If downloading DaVinci_Resolve_Studio, there is a
+link at the bottome of the registration page to "download only").
 
 Put the zip file in the mArchive location.
+
+### Note: Building DaVinci_Resolve_Studio
+
+This has not been implemented.
+
+The **mDVPkg** variable setting implies you are building the free
+version of DaVinci_Resolve. 99% of this code can be used to build
+an installer for DaVinci_Resolve_Studio. To do that, there is a design
+decision:
+
+1) Use a "control" variable to manage which one is being built. This
+style creates conditional sections across the code.
+
+2) Create different definition files. The Makefile will select the
+correct definition file, based on the top build target selected.
+
+3) Use a bit of both. Wherever possible use explicit variable values,
+not control variable as selectors. To set different values for
+different installers, the selection needs to be made at the top most
+level, by selecting different definition files.
 
 ---
 
@@ -96,8 +119,8 @@ Make and check for dependencies. Install any missing dependencies.
 
 ### make build
 
-Place all the files to be packaged in dist/ dir. Verify the files look
-OK.
+Place all the files to be packaged in pseudo root dist/ dir. Verify
+the files look OK.
 
 #### make clean
 
@@ -119,6 +142,16 @@ ssh).  This is your personal installer. This should not be made
 Clean up all build files. Only commit the files that are left.
 DO NOT commit "built" files.
 
+### make help
+
+This target will run the DaVinci_Resolve native installer with a -h
+option, which will list the command line options it will accept. The
+Unpack section of the Makefile used the "-extract" option to get all
+of files bundled in the binary package. A newer installer could have
+different options or very different ways of installing. If really
+different, then the "build" process in the Makefile will need to be
+changed to match the changes.
+
 ---
 
-$Header: /repo/public.cvs/app/davinci-installer/github/src/README.md,v 1.3 2021/04/08 07:09:17 bruce Exp $
+$Header: /repo/public.cvs/app/davinci-installer/github/src/README.md,v 1.4 2021/04/08 20:18:10 bruce Exp $

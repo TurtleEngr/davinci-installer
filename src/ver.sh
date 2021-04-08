@@ -1,4 +1,4 @@
-# $Header: /repo/public.cvs/app/davinci-installer/github/src/ver.sh,v 1.4 2020/12/03 09:34:30 bruce Exp $
+# $Header: /repo/public.cvs/app/davinci-installer/github/src/ver.sh,v 1.5 2021/04/08 20:18:10 bruce Exp $
 
 # Input file for: mkver.pl.  All variables must have
 # "export " at the beginning.  No spaces around the
@@ -12,7 +12,8 @@ export ProdName="davinci-resolve"
 export ProdAlias=$ProdName
 # One word [-_.a-zA-Z0-9]
 
-export ProdVer="16.2.7"
+export ProdVer="17.1.1"
+# 4 parts max
 # [0-9]*.[0-9]*{.[0-9]*}{.[0-9]*}
 
 export ProdBuild="1"
@@ -28,9 +29,10 @@ export ProdVendor="BlackMagic Design"
 
 export ProdPackager="$LOGNAME"
 export ProdSupport="https://www.blackmagicdesign.com/products/davinciresolve/"
-export ProdCopyright=""
+export ProdCopyright="2021"
 
 export ProdDate=""
+# Generated if empty
 # 20[012][0-9]-[01][0-9]-[0123][0-9]
 
 export ProdLicense="dist/opt/resolve/docs/License.txt"
@@ -40,9 +42,9 @@ export ProdReadMe="dist/opt/resolve/docs/ReadMe.html"
 # Required
 
 # Third Party (if any)
-export ProdTPVendor=""
-export ProdTPVer=""
-export ProdTPCopyright=""
+export ProdTPVendor="BlackMagic Design"
+export ProdTPVer="17.1.1"
+export ProdTPCopyright="2021"
 
 # Set this to latest version of mkver.pl
 export MkVer="2.1"
