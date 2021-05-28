@@ -39,7 +39,7 @@ This is the full list (after rm /opt/resolve).
     locate davinci | egrep -v '/mnt/plasma.data3|ver/public|/usr/src/linux-header'
     /lib/udev/rules.d/75-davincipanel.rules
 
-### Shortend to Dirs
+### Shortened to Dirs
 
     find $HOME/.local/share/DaVinciResolve -type l -exec rm {} \;
     rm -rf $HOME/.local/share/DaVinciResolve
@@ -67,6 +67,12 @@ This is the full list (after rm /opt/resolve).
     # Remove any davinci lines. Or use the GUI to edit the menus.
 
     rm $HOME/.local/share/plasma_icons/com.blackmagicdesign.resolve.desktop
+
+### Now do you see
+
+Now do you see why it is important to have an app installer that
+understands where every file is located for your OS? It makes it
+easy to remove and upgrade the app.
 
 ---
 
@@ -103,7 +109,7 @@ distributions and versions. **So a more general solution is needed.**
 
 ## Create a general installer with EPM
 
-This packaging tool will create: rpm and deb package for the most
+This packaging tool will create: rpm and deb packages for the most
 common Linux distributions. It will also create dgm MacOS
 packages. Often the most of the package configuration can be the same
 for the different OS distributions.
@@ -119,9 +125,11 @@ Step 1: build or download the latest EPM packager.
 [ESP Package Manager (EPM) -new home of 2020-11-18](https://jimjag.github.io/epm/)
 [ESP Package Manager (EPM) - old home](https://www.msweet.org/epm/epm.html)
 
-Step 2: Install the EPM helper scripts. These scripts will help
-determine the OS you are on, and the generated env. var. that can be
-used to select the different requirments for each OS.
+Step 2: Install the EPM helper scripts. See
+[EPM Helpers](https://github.com/TurtleEngr/epm-helpers)
+These scripts will help determine the OS you are on, and generate
+environment variables, that can be used to select the different
+requirements for each OS.
 
 Step 3: define the dependencies for each of the OS's that you will be
 building. For Ubuntu, see
@@ -130,4 +138,4 @@ building. For Ubuntu, see
 ---
 
     $Source: /repo/public.cvs/app/davinci-installer/github/README.md,v $
-    $Revision: 1.2 $ $Date: 2021/04/08 06:32:20 $ GMT
+    $Revision: 1.3 $ $Date: 2021/05/28 18:00:13 $ GMT

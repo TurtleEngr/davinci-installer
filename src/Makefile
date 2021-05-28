@@ -1,4 +1,4 @@
-# $Header: /repo/public.cvs/app/davinci-installer/github/src/Makefile,v 1.8 2021/04/08 20:18:10 bruce Exp $
+# $Header: /repo/public.cvs/app/davinci-installer/github/src/Makefile,v 1.9 2021/05/28 18:00:13 bruce Exp $
 
 # ----------------------------------------
 # Macros
@@ -184,11 +184,20 @@ dep-validate :
 # ----------------
 # Unpack
 
-$(mTop)/bin/resolve : tmp/$(mDVPkg).run
+# 16.x
+##$(mTop)/bin/resolve : tmp/$(mDVPkg).run
+##	@echo "Extract the files from the downloaded package"
+##	-xorriso -osirrox on -indev tmp/$(mDVPkg).run -extract / $(mTop)
+##	if [ ! -x $@ ]; then echo "The extract failed"; exit 1; fi
+##	touch $@
+
+# 17.x
+$(mTop)/bin/resolve unpack : tmp/$(mDVPkg).run
 	@echo "Extract the files from the downloaded package"
-	-xorriso -osirrox on -indev tmp/$(mDVPkg).run -extract / $(mTop)
-	if [ ! -x $@ ]; then echo "The extract failed"; exit 1; fi
-	touch $@
+	cd tmp; ./DaVinci_Resolve_17.1.1_Linux.run \
+	-C $(PWD)/$(mTop) -t -n -y -i DaVinci_Resolve_17.1.1_Linux.zip
+	if [ ! -x $(mTop)/bin/resolve ]; then echo "The extract failed"; exit 1; fi
+	touch $(mTop)/bin/resolve
 
 tmp/$(mDVPkg).run : tmp/$(mDVPkg).zip
 	@echo "Unzip the downloaded package"
