@@ -1,7 +1,41 @@
 # davinci-installer
-Repackage DaVinci_Resolve or DaVinci_Resolve_Studio with EPM, to create a more general installer for any Linux distribution.
+
+Repackage DaVinci_Resolve or DaVinci_Resolve_Studio with EPM, to
+create a more general installer for any Linux distribution.
 
 ---
+
+## Create a general installer with EPM
+
+This packaging tool will create: rpm and deb packages for the most
+common Linux distributions. It will also create dgm MacOS
+packages. Often the most of the package configuration can be the same
+for the different OS distributions.
+
+This project leverages from the things MakeResolveDeb implements. But
+it makes a more general installer that can be made for more Linux
+Distributions.  The OS differences can be defined in the installer
+definition files and in configuration files. **The EPM approach is a
+"functional" programming style, i.e. define what you want not how to
+do it.**</p>
+
+Step 1: build or download the latest EPM packager.
+[ESP Package Manager (EPM) -new home of 2020-11-18](https://jimjag.github.io/epm/)
+[ESP Package Manager (EPM) - old home](https://www.msweet.org/epm/epm.html)
+
+Step 2: Install the EPM helper scripts. See
+[EPM Helpers](https://github.com/TurtleEngr/epm-helpers)
+These scripts will help determine the OS you are on, and generate
+environment variables, that can be used to select the different
+requirements for each OS.
+
+Step 3: define the dependencies for each of the OS's that you will be
+building. For Ubuntu, see
+[How to Install Davinci Resolve on Ubuntu and Fix the Audio Issue](https://www.alecaddd.com/how-to-install-davinci-resolve-on-ubuntu-and-fix-the-audio-issue/)
+
+---
+
+# Notes
 
 ## Don't use DiVinci Resolve installer script, if not CentOS
 
@@ -71,7 +105,7 @@ This is the full list (after rm /opt/resolve).
 ### Now do you see
 
 Now do you see why it is important to have an app installer that
-understands where every file is located for your OS? It makes it
+understands where *every* file is located for your OS? It makes it
 easy to remove and upgrade the app.
 
 ---
@@ -96,10 +130,10 @@ There are some tips here too.
 > solve that issue while including the Debian specific features
 > required for a working Resolve system."
 
-I reviewed the MakeResolveDeb installer. It will work with Debian
-dpkg distributions. However after digging through the DaVinci_Resolve
+I reviewed the MakeResolveDeb installer. It will work with Debian dpkg
+distributions. *However after digging through the DaVinci_Resolve
 supplied native installer, there are problems with the MakeResolveDeb
-installer. It hardcodes things that it could have picked out of the
+installer.* It hardcodes things that it could have picked out of the
 native installer supplied files. I.e. it is fragile. Newer versions
 will need more hardcoding. In addition it will only support Debian
 distributions. There could be subtle differences between the
@@ -107,35 +141,4 @@ distributions and versions. **So a more general solution is needed.**
 
 ---
 
-## Create a general installer with EPM
-
-This packaging tool will create: rpm and deb packages for the most
-common Linux distributions. It will also create dgm MacOS
-packages. Often the most of the package configuration can be the same
-for the different OS distributions.
-
-This project leverages from the things MakeResolveDeb implements. But
-it makes a more general installer that can be made for more Linux
-Distributions.  The OS differences can be defined in the installer
-definition files and in configuration files. **The EPM approach is a
-"functional" programming style, i.e. define what you want not how to
-do it.**</p>
-
-Step 1: build or download the latest EPM packager.
-[ESP Package Manager (EPM) -new home of 2020-11-18](https://jimjag.github.io/epm/)
-[ESP Package Manager (EPM) - old home](https://www.msweet.org/epm/epm.html)
-
-Step 2: Install the EPM helper scripts. See
-[EPM Helpers](https://github.com/TurtleEngr/epm-helpers)
-These scripts will help determine the OS you are on, and generate
-environment variables, that can be used to select the different
-requirements for each OS.
-
-Step 3: define the dependencies for each of the OS's that you will be
-building. For Ubuntu, see
-[How to Install Davinci Resolve on Ubuntu and Fix the Audio Issue](https://www.alecaddd.com/how-to-install-davinci-resolve-on-ubuntu-and-fix-the-audio-issue/)
-
----
-
     $Source: /repo/public.cvs/app/davinci-installer/github/README.md,v $
-    $Revision: 1.3 $ $Date: 2021/05/28 18:00:13 $ GMT
